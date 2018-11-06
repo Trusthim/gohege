@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link href='https://fonts.googleapis.com/css?family=Ubuntu-L' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+body,h1,h2,h3,h4,h5,a,button {
+    font-family: 'Ubuntu-L';
+}
+body,p,h5{
+    font-family: 'Ubuntu-L';color:#7b7c7c;font-weight:lighter;
+}
+body,h1{
+    font-size:15px;
+}
+
+body {font-size:19px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.w3-light-grey
+
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:250px;font-weight:;background-color:rgb(10, 135, 112);color:white;padding-right:100px;font-family:Ubutu-L;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:20px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-54"style="font-size:37px;font-weight:bolder;"><b><b>GOHedge</b></b></h3>
+	<hr style="width:60px;border:5px solid white;" class="w3-round">
+  </div>
+  <div class="w3-bar-block">
+    
+   <div class="w3-dropdown-click"><button onclick="myFunction()" class="w3-bar-item w3-button w3-hover-white w3-border-bottom"><i class="fa fa-fw fa-home"></i> Home</button>
+	<div id="Demo" class="w3-dropdown-content w3-bar-block">
+      <a href="#contact" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#designers" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#packages" class="w3-bar-item w3-button">Link 3</a>
+    </div></div>
+	
+	 <div class="w3-dropdown-click"><button onclick="myFunction1()" class="w3-bar-item w3-button w3-hover-white w3-border-bottom "><i class="fa fa-fw fa-user"></i> Login</button>
+	<div id="Demo1" class="w3-dropdown-content w3-bar-block"">
+      <a href="#contact" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#designers" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#packages" class="w3-bar-item w3-button">Link 3</a>
+    </div></div>
+	
+	 <div class="w3-dropdown-click"><button onclick="myFunction2()" class="w3-bar-item w3-button w3-hover-white w3-border-bottom"><i class="fa fa-fw fa-user"></i> Home</button>
+	<div id="Demo2" class="w3-dropdown-content w3-bar-block">
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-white w3-border-bottom">Link 1</a>
+      <a href="#designers" class="w3-bar-item w3-button w3-hover-white w3-border-bottom">Link 2</a>
+      <a href="#packages" class="w3-bar-item w3-button w3-hover-white w3-border-bottom">Link 3</a>
+    </div></div>
+	
+	
+
+	
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border-bottom"><i class="fa fa-fw fa-user"></i> Designers</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border-bottom"><i class="fa fa-fw fa-user"></i> Packages</a> 
+    
+	
+	  <div class="w3-dropdown-hover">
+    <button class="w3-bar-item w3-button w3-hover-white w3-border-bottom"><i class="fa fa-fw fa-user"></i> Hover Over Me!</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="#" class="w3-bar-item w3-button w3-hover-white w3-border-bottom">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white w3-border-bottom">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white w3-border-bottom">Link 3</a>
+    </div>
+  </div>
+	
+	
+	<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border-bottom"><i class="fa fa-fw fa-user"></i> Contact</a>
+	 <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border-bottom"><i class="fa fa-fw fa-user"></i> Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border-bottom"><i class="fa fa-fw fa-user"></i> Showcase</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border-bottom"><i class="fa fa-fw fa-user"></i> Services</a> 
+   
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-teal w3-top w3-hide-large w3-xlarge w3-padding" style="font-family:;color:white;">
+  <a href="javascript:void(0)" class="w3-button w3- w3-margin-right" onclick="w3_open()">☰</a>
+  <span style="font-size:35px;"><b>GOHedge</b><span  style="float:right;height:5px;width:10px;margin-right:30px;"><i class="fa fa-fw fa-search"></i></span></span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-white" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:257px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:0px;font-family:Nunito;" id="showcase">
+    
+   
+   
+  </div>
+  
+
+  
+  
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:15px;font-family:Ubutu-L;">
+    <h1 class="w3-xxxlarge w3-text-black">Services.</h1>
+    <hr style="width:70px;border:5px solid black" class="w3-round">
+    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Positive signs
+These are directly attributed to the fetus as detected and documented by the examiner.
+They are:
+<br>
+<i class="fa fa-fw fa-user"></i> Visualization of the fetus by ultrasound scan (6th wk.)<br>
+<i class="fa fa-fw fa-user"></i> Visualization of the fetal skeleton by X-ray(16th week)<br>
+<i class="fa fa-fw fa-user"></i> Fetal heart sounds by ultrasound(6th week)<br>
+<i class="fa fa-fw fa-user"></i> Fetal heart sound heard with a fetoscope<br><hr>
+</p><p>Palpable fetal movements (22wks)
+Visible fetal movements(late pregnancy)
+Palpation of the fetal parts (24th week)<br>
+CONCLUSION
+It should be noted that a number of the above signs should be considered before diagnosing pregnancy since there are other conditions which present with some of the above signs</p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:15px;font-family:Ubutu-L;">
+    <h1 class="w3-xxxlarge w3-text-black">Designers.</h1>
+    <hr style="width:70px;border:5px solid black" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+  
+   <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:15px;font-family:Ubutu-L;">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Designers.</b></h1>
+    <hr style="width:70px;border:5px solid black" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+  
+   <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:15px;font-family:Nunito;">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Designers.</b></h1>
+    <hr style="width:70px;border:5px solid black" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+  
+   <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:15px;font-family:Nunito;">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Designers.</b></h1>
+    <hr style="width:70px;border:5px solid black" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+  
+   <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:15px;font-family:Nunito;">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Designers.</b></h1>
+    <hr style="width:70px;border:5px solid black" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+  
+   <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:15px;font-family:Nunito;">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Designers.</b></h1>
+    <hr style="width:70px;border:5px solid black" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+  
+   <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:15px;font-family:Nunito;">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Designers.</b></h1>
+    <hr style="width:70px;border:5px solid black" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">10 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">20% furniture discount</li>
+        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">50 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">50% furniture discount</li>
+        <li class="w3-padding-16">GREAT deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 249</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+  
+  
+   <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="https://lh3.googleusercontent.com/MS6D4DSyUd_fA_XuT2fAeg9ne4d5dx6zdwT3M2zNsPs0OEKGfiEOuAiLF-21IkpA0w28sdbkDYacdskn9NJBUdn6LtrSSDI3HbDEZyRbYxJcdOcrSaMwgiNx0pROaGVhVcWJTygPo2-jW8JHYT0SFBTnNR65VPgLsd3dtwLHHVQvUrAEHSfWzUxQVrFsr38HQtIvJuf1oAFpalECp7C00LMuZbpMQBDXoi0IjqFcx8DxpL7NnP5RQfVabETqXbQHr02Ku61Bhtbn2_V8ZR9hkLMBEV72hFGDG6M3uDXimvbP3fjQI32iZBisYhARvtZeiqGyOedc7tDtsyxm1VaBqXN2zFkvOI95aicd7oNoeawREZTyFb4VFzPb6YyU83djS_ZWBxpfy-ryD5wZOtyoUbPtcuQMEDjYicapqh2zBsCdfpQZ-Iv9G34P_se0G2r_83qBXplf7O-0HOH1kKz_vdrQacT-cr0aN4kpAwao8_eOByVtrYwEBt7NvJn1BoNJl4TLOzefxF033mvwFclXEgDeCA6iEZyyI239IAiJcfE3r_d2ufj-vCHGEZlGpjMUZxTCpQE3h3E9cFsea0QRWVW7zBag6QBMRgfAIcAZEy0McHRQw6LjoTgR4dHDiA=w1024-h683-no" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="https://lh3.googleusercontent.com/MS6D4DSyUd_fA_XuT2fAeg9ne4d5dx6zdwT3M2zNsPs0OEKGfiEOuAiLF-21IkpA0w28sdbkDYacdskn9NJBUdn6LtrSSDI3HbDEZyRbYxJcdOcrSaMwgiNx0pROaGVhVcWJTygPo2-jW8JHYT0SFBTnNR65VPgLsd3dtwLHHVQvUrAEHSfWzUxQVrFsr38HQtIvJuf1oAFpalECp7C00LMuZbpMQBDXoi0IjqFcx8DxpL7NnP5RQfVabETqXbQHr02Ku61Bhtbn2_V8ZR9hkLMBEV72hFGDG6M3uDXimvbP3fjQI32iZBisYhARvtZeiqGyOedc7tDtsyxm1VaBqXN2zFkvOI95aicd7oNoeawREZTyFb4VFzPb6YyU83djS_ZWBxpfy-ryD5wZOtyoUbPtcuQMEDjYicapqh2zBsCdfpQZ-Iv9G34P_se0G2r_83qBXplf7O-0HOH1kKz_vdrQacT-cr0aN4kpAwao8_eOByVtrYwEBt7NvJn1BoNJl4TLOzefxF033mvwFclXEgDeCA6iEZyyI239IAiJcfE3r_d2ufj-vCHGEZlGpjMUZxTCpQE3h3E9cFsea0QRWVW7zBag6QBMRgfAIcAZEy0McHRQw6LjoTgR4dHDiA=w1024-h683-no" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="https://lh3.googleusercontent.com/MS6D4DSyUd_fA_XuT2fAeg9ne4d5dx6zdwT3M2zNsPs0OEKGfiEOuAiLF-21IkpA0w28sdbkDYacdskn9NJBUdn6LtrSSDI3HbDEZyRbYxJcdOcrSaMwgiNx0pROaGVhVcWJTygPo2-jW8JHYT0SFBTnNR65VPgLsd3dtwLHHVQvUrAEHSfWzUxQVrFsr38HQtIvJuf1oAFpalECp7C00LMuZbpMQBDXoi0IjqFcx8DxpL7NnP5RQfVabETqXbQHr02Ku61Bhtbn2_V8ZR9hkLMBEV72hFGDG6M3uDXimvbP3fjQI32iZBisYhARvtZeiqGyOedc7tDtsyxm1VaBqXN2zFkvOI95aicd7oNoeawREZTyFb4VFzPb6YyU83djS_ZWBxpfy-ryD5wZOtyoUbPtcuQMEDjYicapqh2zBsCdfpQZ-Iv9G34P_se0G2r_83qBXplf7O-0HOH1kKz_vdrQacT-cr0aN4kpAwao8_eOByVtrYwEBt7NvJn1BoNJl4TLOzefxF033mvwFclXEgDeCA6iEZyyI239IAiJcfE3r_d2ufj-vCHGEZlGpjMUZxTCpQE3h3E9cFsea0QRWVW7zBag6QBMRgfAIcAZEy0McHRQw6LjoTgR4dHDiA=w1024-h683-no" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+function myFunction() {
+    var x = document.getElementById("Demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myFunction1() {
+    var x = document.getElementById("Demo1");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+		
+    }
+}
+
+function myFunction2() {
+    var x = document.getElementById("Demo2");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+
+</body>
+</html>
